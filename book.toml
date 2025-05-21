@@ -8,6 +8,6 @@ title = "youbet-tutorial"
 [output.html]
 additional-css = ["custom.css"]
 additional-js = ["custom.js"]
-git-repository-url = "https://github.com/youbetdao/youbet-tutorial-template"
+git-repository-url = "https://github.com/YoubetDao/reth-explained"
 git-repository-icon = "fa-github"
 mathjax-support = true
