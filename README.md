@@ -20,7 +20,33 @@ mdbook serve
  `mdbook` 是基于 Rust 的一个使用`Markdown` 创建图书的命令行工具, 需要本地先安装命令, 详情参考官方文档: [mdbook](https://rust-lang.github.io/mdBook/)
  ```bash
  cargo install mdbook
- ``` 
+ ```
+
+### 安装 Mermaid 支持
+
+为了支持在文档中使用 Mermaid 图表，需要安装 mdbook-mermaid 插件：
+
+```bash
+cargo install mdbook-mermaid
+```
+
+首次添加 mdbook-mermaid 时，让它添加所需的文件和配置
+
+```bash
+mdbook-mermaid install path/to/your/book
+```
+
+现在你可以在 Markdown 文件中使用 Mermaid 语法创建图表，例如：
+
+````markdown
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
 
 ## 关于 Youbet Study Group
 
@@ -30,5 +56,5 @@ mdbook serve
 
 - **Telegram 社区**：[加入讨论](https://t.me/+_a-io1KqMIc5ZjQ9)
 
-**特别鸣谢**  
+**特别鸣谢**
 本项目感谢 [According.Work](https://according.work/) 提供的技术支持和协作平台。

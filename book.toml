@@ -3,11 +3,16 @@ authors = ["youbetdao"]
 language = "zh"
 multilingual = true
 src = "src"
-title = "youbet-tutorial"
+title = "reth-tutorial"
 
 [output.html]
 additional-css = ["custom.css"]
-additional-js = ["custom.js"]
+additional-js = ["custom.js", "mermaid.min.js", "mermaid-init.js"]
 git-repository-url = "https://github.com/YoubetDao/reth-explained"
 git-repository-icon = "fa-github"
 mathjax-support = true
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
