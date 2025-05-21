@@ -5,6 +5,9 @@ multilingual = true
 src = "src"
 title = "reth-tutorial"
 
+[build]
+build-dir = "book"
+
 [output.html]
 additional-css = ["custom.css"]
 additional-js = ["custom.js", "mermaid.min.js", "mermaid-init.js"]

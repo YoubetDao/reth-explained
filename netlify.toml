@@ -1,0 +1,7 @@
+[build]
+  publish = "book"
+  command = """
+    cargo install mdbook
+    cargo install mdbook-mermaid
+    mdbook build
+  """
