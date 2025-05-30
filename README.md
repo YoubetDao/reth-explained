@@ -1,42 +1,32 @@
-# youbet-tutorial-template
+<div align="center">
 
-本仓库是 [According.Work](https://according.work/) 的教程模板，欢迎大家使用。
+[![Read Online: reth-explained](https://img.shields.io/badge/Read%20Online-reth--explained-blue?style=for-the-badge&logo=readthedocs)](https://reth-explained.netlify.app/)
 
-## 准备工作
+</div>
 
-- 更新 readme 文件
-- 更新目录结构
-- settings/pages/build and deployment/source 设置为 github actions - 随后选择 mdbook
+## How to Run?
 
-## 如何参与？
+`mdbook` is a command-line tool based on Rust for creating books using `Markdown`. You need to install it locally first. For more details, refer to the official documentation: [mdbook](https://rust-lang.github.io/mdBook/)
 
-## 如何运行？
+First, install the required tools:
 
 ```bash
-mdbook serve 
+cargo install mdbook
 ```
- ![mdbook](https://3bcaf57.webp.li/myblog/mdbook1.png)
- 
- `mdbook` 是基于 Rust 的一个使用`Markdown` 创建图书的命令行工具, 需要本地先安装命令, 详情参考官方文档: [mdbook](https://rust-lang.github.io/mdBook/)
- ```bash
- cargo install mdbook
- ```
 
-### 安装 Mermaid 支持
-
-为了支持在文档中使用 Mermaid 图表，需要安装 mdbook-mermaid 插件：
+To use Mermaid diagrams in your documentation, also install the mdbook-mermaid plugin:
 
 ```bash
 cargo install mdbook-mermaid
 ```
 
-首次添加 mdbook-mermaid 时，让它添加所需的文件和配置
+If this is your first time adding mdbook-mermaid, initialize it in your book directory:
 
 ```bash
 mdbook-mermaid install path/to/your/book
 ```
 
-现在你可以在 Markdown 文件中使用 Mermaid 语法创建图表，例如：
+You can now use Mermaid syntax in your Markdown files to create diagrams, for example:
 
 ````markdown
 ```mermaid
@@ -48,13 +38,65 @@ graph TD;
 ```
 ````
 
-## 关于 Youbet Study Group
+Now you can serve the book locally:
 
-[Youbet Study Group](https://x.com/youbetdao) 是一个硬核的 web3 技术社区，关注密码学和区块链底层技术。更多教程可以访问 [Youbet Study Group Tutorials](https://according.work/tutorials)
+```bash
+mdbook serve
+```
 
-如果您希望了解更多内容或加入小组，请联系我们！
+![mdbook](https://3bcaf57.webp.li/myblog/mdbook1.png)
 
-- **Telegram 社区**：[加入讨论](https://t.me/+_a-io1KqMIc5ZjQ9)
+## How to Participate?
 
-**特别鸣谢**
-本项目感谢 [According.Work](https://according.work/) 提供的技术支持和协作平台。
+We welcome contributions and community involvement! Here's how you can participate:
+
+- **Report Issues:** If you find any mistakes, bugs, or have suggestions, please open an issue in this repository.
+- **Submit Pull Requests:** Want to improve the content or fix something? Fork the repo, make your changes, and submit a pull request.
+- **Join the Discussion:** Connect with us and other contributors in our [Telegram Community](https://t.me/+_a-io1KqMIc5ZjQ9).
+- **Share Feedback:** Your feedback helps us improve! Feel free to comment on issues or PRs, or reach out via social channels.
+
+Whether you're a beginner or an expert, your input is valuable. Let's build and learn together!
+
+## How to Contribute
+
+Ready to make a contribution? Follow these steps:
+
+1. **Fork the Repository:** Click the "Fork" button at the top right of this page to create your own copy of the repository.
+2. **Clone Your Fork:**
+   ```bash
+   git clone https://github.com/your-username/reth-explained.git
+   cd reth-explained
+   ```
+3. **Create a New Branch:**
+   ```bash
+   git checkout -b your-feature-branch
+   ```
+4. **Make Your Changes:** Edit files, add content, or fix bugs as needed.
+5. **Commit Your Changes:**
+   ```bash
+   git add .
+   git commit -m "Clear and descriptive commit message"
+   ```
+6. **Push to Your Fork:**
+   ```bash
+   git push origin your-feature-branch
+   ```
+7. **Open a Pull Request:** Go to the original repository and click "New Pull Request". Select your branch and describe your changes.
+
+**Best Practices:**
+- Write clear, concise commit messages.
+- Reference related issues in your PR description (e.g., "Closes #12").
+- Make sure your code or content follows the project's style and guidelines.
+
+Thank you for helping improve this project!
+
+## About Youbet Study Group
+
+[Youbet Study Group](https://x.com/youbetdao) is a hardcore web3 tech community focused on cryptography and blockchain infrastructure. For more tutorials, visit [Youbet Study Group Tutorials](https://according.work/tutorials).
+
+If you want to learn more or join the group, please contact us!
+
+- **Telegram Community**: [Join the discussion](https://t.me/+_a-io1KqMIc5ZjQ9)
+
+**Special Thanks**
+This project thanks [According.Work](https://according.work/) for technical support and collaboration.
